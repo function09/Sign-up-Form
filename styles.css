@@ -1,31 +1,68 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-label {
-    display: block;
-}
-
-input{
-    margin-right: 50px;
-    padding: 5px;
-}
-
-.page-right {
-    height: 100vh;
+.pageRight {
     display: flex;
-    justify-content: right;
-    align-items: center;
+    justify-content: flex-end;
 }
 
-.form-left, .form-right {
+
+.containerRight {
+    height: 100vh;
+    width: 60%;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.textBox {
+    height: 25%;
     width: 100%;
     display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
-.form-right {
-    margin-bottom: 100px;
+.line1, .line2, .line3 {
+    font-size: 2em;
 }
 
+.formContainer {
+    margin-top: 25px;
+    
+}
 
+.signUp {
+    font-size: 2em;
+    margin-bottom: 25px;
+}
+
+form {
+    height: 35%;
+    width: 65%;
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 65px;
+}
+
+label {
+    display: block;
+    font-size: 1.5em;
+}
+
+input {
+    padding: 10px;
+    width: 300px;
+}
+
+.pageRightBottom {
+    height: 15%;
+    width: 65%;
+    margin-bottom: 10%;
+    font-size: 1.2em;
+}

@@ -8,45 +8,69 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="page-right">
-        <div class="form-control">
-            <form action="" method="post">
+    <div class="pageRight">
 
-                <div class="form-right">
-                    <div class="form">
-                        <label for="first_name">First Name:</label>
-                        <input type="text" name="first_name" id="first_name">
+        <div class="containerRight">
+            <div class="textBox">
+               <div class="line1">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed 
+                    do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+               </div> 
+               <div class="line2">
+                    Vitae congue mauris rhoncus aenean vel elit scelerisque mauris.
+               </div>
+               <div class="line3">
+                    Gravida arcu ac tortor dignissim. Dolor purus non enim praesent elementum facilisis.
+               </div>
+            </div>
+
+            <div class="formContainer">
+
+                <div class="signUp">Sign up now!</div>
+
+                <form action="" method="post">
+
+                    <div class="inputContainer">
+                        <label for="first_name">First Name</label>
+                        <input id="first_name" name="first_name" type="text" required="required">
                     </div>
     
-                    <div class="form">
-                        <label for="last_name">Last Name:</label>
-                        <input type="text" name="last_name" id="last_name">
+                    <div class="inputContainer">
+                        <label for="last_name">Last Name</label>
+                        <input id="last_name" name="last_name" type="text" required="required">
                     </div>
-                    
-                    <div class="form">
-                        <label for="phone_number">Phone Number:</label>
-                        <input type="tel" name="phone_number" id="phone_number">
-                    </div>  
-                </div>
-                 
-                <div class="form-left">
-                    <div class="form">
-                        <label for="email">Email:</label>
-                        <input type="email" name="email" id="email">
-                    </div>  
     
-                    <div class="form">
-                        <label for="password">Password:</label>
-                        <input type="password" name="password" id="password">
-                    </div> 
-        
-                    <div class="form">
+                    <div class="inputContainer">
+                        <label for="email">Email</label>
+                        <input id="email" name="email" type="email" required="required">
+                    </div>
+    
+                    <div class="inputContainer">
+                        <label for="phone_number">Phone Number</label>
+                        <input id="phone_number" name="phone_number" type="tel" required="required">
+                    </div>
+    
+                    <div class="inputContainer">
+                        <label for="password">Password</label>
+                        <input id="password" name="password" type="password" required="required">
+                    </div>
+    
+                    <div class="inputContainer">
                         <label for="confirm_password">Confirm Password</label>
-                        <input type="password" name="confirm_password" id="confirm_password">
-                    </div>   
-                </div>
-            </form>
+                    <input id="confirm_password" name="confirm_password" type="password" required="required">
+                    </div>
+
+                    <div class="pageRightBottom">
+                        <button type="submit">Create Account</button>
+                        <div>Already have an account? Log in</div>
+                        
+                    </div>
+                </form>
+            </div>
+            
+           
         </div>
-    </div>  
+    </div>
+   
 </body>
 </html>
