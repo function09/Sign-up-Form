@@ -1,48 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
 * {
     margin: 0;
     padding: 0;
 }
+/* CSS for the left side of the page */
 
-.pageRight {
-    display: flex;
-    justify-content: flex-end;
+body{
+    background-color: #161B36; 
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
+.containerLeft {
+    height: 100vh;
+    width: inherit;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.banner {
+    position: absolute;
+    top: 10%;
+    height: 10vh;
+    width: 33.7%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 45px;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.credits {
+    color: #F7F7F7;
+    position: absolute;
+    top: 95%;
+    left: 6%;
+    height: 2.5%;
+    width: 20%;
+    font-family: 'Roboto Mono', monospace;
+}
+
+a {
+    color: #F7F7F7;
+}
+
+.icon {
+    height: 10vh;
+    width: 20%;
+}
+.bannerText {
+    color: #F7F7F7;
+    font-size: 2.3em;
+}
+
+/* CSS for the right side of the page */
+.mainContainer {
+    display: flex;
+    justify-content: flex-end;
+    font-family: 'Roboto Mono', monospace;
+}
 
 .containerRight {
     height: 100vh;
-    width: 60%;
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
 }
 
 .textBox {
-    height: 25%;
-    width: 100%;
+    height: 30vh;
+    width: 60vw;
     display: flex;
     justify-content: flex-start;
     align-items: center;
     flex-wrap: wrap;
+    color: #F7F7F7;
+    padding: 45px 0 45px 0;
+    gap: 10px;
 }
 
 .line1, .line2, .line3 {
     font-size: 2em;
+    margin-left: 20px;
 }
 
 .formContainer {
-    margin-top: 25px;
-    
+    height: 40vh;
+    width: 70vw;
+    padding-bottom: 40px;
+    background-color: #0B1026;
+    box-shadow: 10px 10px 20px #1c2a57;
 }
 
 .signUp {
     font-size: 2em;
-    margin-bottom: 25px;
+    margin: 25px;
+    padding-bottom: 10px;
+    color: #ffffff;
 }
 
 form {
     height: 35%;
-    width: 65%;
+    width: 45vw;
     display:flex;
     justify-content: flex-start;
     align-items: center;
@@ -50,21 +110,64 @@ form {
     gap: 65px;
 }
 
+.inputContainer {
+    position: relative;
+}
+
 label {
-    display: block;
-    font-size: 1.5em;
+    position: absolute;
+    top: -20%;
+    left: 30px;
+    font-size: 1em;
+    pointer-events: none;
+    text-transform: uppercase;
+    background-color: #0B1026;
+    color: #F7F7F7;
 }
 
 input {
-    padding: 10px;
+    position: relative;
     width: 300px;
+    padding: 10px;
+    font-size: 1.75em;
+    border-radius: 5px;
+    background-color: #161B36;
+    color: #F7F7F7;
+    left: 20px;
+    border: 1px solid #F7F7F7
 }
-input:invalid {
-    border-color: red;
+
+input:focus {
+    outline: 1px solid #F7F7F7;
 }
+
 .pageRightBottom {
-    height: 15%;
-    width: 65%;
-    margin-bottom: 10%;
+    height: 15vh;
+    width: 65vw;
     font-size: 1.2em;
+    margin-left: 20px;
+    color: #F7F7F7;
 }
+
+.pageRightBottom > button {
+    margin: 15px 0 15px 0;
+    font-family: 'Roboto Mono', monospace;
+}
+
+button {
+    border: solid whitesmoke;
+    border-radius: 5px;
+    padding: 6px 14px;
+    font-size: 1.5em;
+    background-color: #161B36;
+    color: #F7F7F7;
+}
+
+button:hover {
+    background-color: #2d43a5
+}
+
+button:active {
+    transform: translateY(4px)
+}
+
